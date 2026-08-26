@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bài 4</title>
+</head>
+<body>
+    <h1>form tạo thồn tin</h1>
+    <form>
+        <!--Input nếu không truyền type thì-->
+        <!--Type sẽ mặc định là text-->
+        <!--name viết liền không dấu-->
+        <div>
+            <p><b>Họ và tên</b></p>
+             Giới thiệu: <textarea name="Hovaten"></textarea> 
+        </div>
+        <div>
+            <p><b>Giới thiệu</b></p>
+             Giới thiệu: <textarea name="Gioithieu"></textarea> 
+        </div>
+        <div>
+            <p><b>Email</b></p>
+            Email: <input type="text" name="Email">
+        </div>
+        <!--Sô điện thoại:0-->
+        <!--Số tiếp theo:9,3,6,8-->
+        <!--8 Số cuối: 0-9 -->
+        <div>
+            <p><b>Số điện thoại</b></p>
+             Sô điện thoại: <textarea name="Sodienthoai"></textarea> 
+             <input name="Sodienthoai"
+             type="tel"
+             placeholder="Dạng sô 123"
+             Requireb
+             pattern="0[9368][0-9]{8}">
+        </div>
+        <div>
+            <p><b>Giới tính</b></p>
+            <input type="radio" name="Gioitinh" Value="nam">Nam<br>
+            <input type="radio" name="Gioitinh" Value="nu">Nữ<br>
+        </div>
+        <div>
+            <p><b>Sở thích</b></p>
+            Game: <input type="checkbox" name="sothich" Value="game"><br>
+            Music<input type="checkbox" name="sothich" Value="music"><br>
+            sport<input type="checkbox" name="sothich" Value="sport"><br>
+        </div>
+        <div>
+            <p><b>Trình duyệt web sử dụng</b></p>
+            <input list="browsers">
+            <datalist ib="browsers">
+                <option value="Internet Explorer">
+                <option value="Firefox">
+                <option value="Chrome">
+                <option value="Opera">
+            </datalist>
+            <select name="browsers">
+                <option value="Internet Explorer">Internet Explorer</option>
+                <option value="Firefox">Firefox</option>
+                <option value="Chrome">Chrome</option>
+                <option value="Opera">Opera</option>
+            </select>
+        </div>
+        <div>
+            0 <input type="range" id="a" value="50"> 100
+        </div>
+        <div>
+            <input type="submit">
+            <button>click</button>
+            <input type="reset">
+        </div>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/TdhtaFWIjwI?si=psMQ1Y-z5WuTrywk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        <MArquee>
+            <img src="/ảnh/anh.png">
+        </MArquee>
+        <audio controls>
+            <sourcce src="" type="">
+        </audio>
+        <video controls>
+            <sourcce src="" type="">
+         </video>
+
+    </form>
+</body>
+</html>
