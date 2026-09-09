@@ -1,85 +1,113 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="vi">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Bài 4</title>
 </head>
 <body>
-    <h1>form tạo thồn tin</h1>
-    <form>
-        <!--Input nếu không truyền type thì-->
-        <!--Type sẽ mặc định là text-->
-        <!--name viết liền không dấu-->
+    <h1>Form tạo thông tin</h1>
+    <form action="" method="post">
+        
+        <!-- Họ và tên -->
         <div>
-            <p><b>Họ và tên</b></p>
-             Giới thiệu: <textarea name="Hovaten"></textarea> 
+            <p><b>Họ và tên:</b></p>
+            <input type="text" name="hovaten" placeholder="Nhập họ và tên" required>
         </div>
+
+        <!-- Giới thiệu -->
         <div>
-            <p><b>Giới thiệu</b></p>
-             Giới thiệu: <textarea name="Gioithieu"></textarea> 
+            <p><b>Giới thiệu:</b></p>
+            <textarea name="gioithieu" rows="4" cols="50" placeholder="Viết giới thiệu bản thân..."></textarea>
         </div>
+
+        <!-- Email -->
         <div>
-            <p><b>Email</b></p>
-            Email: <input type="text" name="Email">
+            <p><b>Email:</b></p>
+            <input type="email" name="email" placeholder="example@gmail.com" required>
         </div>
-        <!--Sô điện thoại:0-->
-        <!--Số tiếp theo:9,3,6,8-->
-        <!--8 Số cuối: 0-9 -->
+
+        <!-- Số điện thoại -->
         <div>
-            <p><b>Số điện thoại</b></p>
-             Sô điện thoại: <textarea name="Sodienthoai"></textarea> 
-             <input name="Sodienthoai"
-             type="tel"
-             placeholder="Dạng sô 123"
-             Requireb
-             pattern="0[9368][0-9]{8}">
+            <p><b>Số điện thoại:</b></p>
+            <input name="sodienthoai"
+                   type="tel"
+                   placeholder="Dạng số 0912345678"
+                   required
+                   pattern="0[9368][0-9]{8}">
         </div>
+
+        <!-- Giới tính -->
         <div>
-            <p><b>Giới tính</b></p>
-            <input type="radio" name="Gioitinh" Value="nam">Nam<br>
-            <input type="radio" name="Gioitinh" Value="nu">Nữ<br>
+            <p><b>Giới tính:</b></p>
+            <label><input type="radio" name="gioitinh" value="nam"> Nam</label><br>
+            <label><input type="radio" name="gioitinh" value="nu"> Nữ</label><br>
         </div>
+
+        <!-- Sở thích -->
         <div>
-            <p><b>Sở thích</b></p>
-            Game: <input type="checkbox" name="sothich" Value="game"><br>
-            Music<input type="checkbox" name="sothich" Value="music"><br>
-            sport<input type="checkbox" name="sothich" Value="sport"><br>
+            <p><b>Sở thích:</b></p>
+            <label><input type="checkbox" name="sothich" value="game"> Chơi game</label><br>
+            <label><input type="checkbox" name="sothich" value="music"> Nghe nhạc</label><br>
+            <label><input type="checkbox" name="sothich" value="sport"> Thể thao</label><br>
         </div>
+
+        <!-- Trình duyệt web -->
         <div>
-            <p><b>Trình duyệt web sử dụng</b></p>
-            <input list="browsers">
-            <datalist ib="browsers">
+            <p><b>Trình duyệt web sử dụng:</b></p>
+            <!-- Datalist gợi ý nhập -->
+            <input list="browsers" name="browser_input" placeholder="Chọn hoặc nhập trình duyệt...">
+            <datalist id="browsers">
                 <option value="Internet Explorer">
                 <option value="Firefox">
                 <option value="Chrome">
                 <option value="Opera">
             </datalist>
-            <select name="browsers">
+
+            <br><br>
+
+            <!-- Thẻ Select lựa chọn -->
+            <select name="browser_select">
                 <option value="Internet Explorer">Internet Explorer</option>
                 <option value="Firefox">Firefox</option>
                 <option value="Chrome">Chrome</option>
                 <option value="Opera">Opera</option>
             </select>
         </div>
+
+        <!-- Thanh trượt -->
         <div>
-            0 <input type="range" id="a" value="50"> 100
+            <p><b>Mức độ:</b></p>
+            0 <input type="range" id="a" min="0" max="100" value="50"> 100
         </div>
+
+        <!-- Nút bấm -->
         <div>
-            <input type="submit">
-            <button>click</button>
-            <input type="reset">
+            <input type="submit" value="Gửi">
+            <button type="button">Click</button>
+            <input type="reset" value="Làm lại">
         </div>
-        <iframe width="560" height="315" src="https://www.youtube.com/embed/TdhtaFWIjwI?si=psMQ1Y-z5WuTrywk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+        <!-- Video nhúng -->
+        <br>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/TdhtaFWIjwI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+
+        <!-- Hình ảnh chạy -->
         <marquee>
-            <img src="/ảnh/anh.png">
+            <img src="/ảnh/anh.png" alt="Hình ảnh">
         </marquee>
+
+        <!-- Audio -->
         <audio controls>
-            <source src="" type="">
+            <source src="audio.mp3" type="audio/mpeg">
+            Trình duyệt không hỗ trợ thẻ audio.
         </audio>
-        <video controls>
-            <source src="" type="">
-         </video>
+
+        <!-- Video -->
+        <video controls width="320" height="240">
+            <source src="video.mp4" type="video/mp4">
+            Trình duyệt không hỗ trợ thẻ video.
+        </video>
     </form>
 </body>
 </html>
