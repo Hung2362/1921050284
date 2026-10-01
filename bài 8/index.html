@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>javascript-1</title>
+</head>
+<body>
+    <script>
+        // in ra man hinh
+        document.writeln("hello world");
+        var ten = "HUNG";
+        // khai bao bien
+        var Sothunhat = 10;
+        var Sothuhai = 5;
+        var ketqua = 0;
+
+        // cong +
+        document.write("<br> ket qua Sothu1 + Sothu2 la: ");
+        ketqua = Sothunhat + Sothuhai;
+        document.write(ketqua);
+
+        // tru -
+        document.write("<br> ket qua Sothu1 - Sothu2 la: ");
+        ketqua = Sothunhat - Sothuhai;
+        document.write(ketqua);
+
+        // nhan *
+        document.write("<br> ket qua Sothu1 x Sothu2 la: ");
+        ketqua = Sothunhat * Sothuhai;
+        document.write(ketqua);
+
+        // chia /
+        document.write("<br> ket qua Sothu1 / Sothu2 la: ");
+        ketqua = Sothunhat / Sothuhai;
+        document.write(ketqua);
+
+        // chia lay du %
+        document.write("<br> ket qua Sothu1 % Sothu2 la: ");
+        ketqua = Sothunhat % Sothuhai;
+        document.write(ketqua);
+
+        //++
+        document.writeln("<Br>")
+        document.writeln(++Sothunhat);
+        //--    
+
+        //+=
+        Sothunhat += Sothuhai;
+        document.writeln(Sothunhat);
+
+        var ho ="Do";
+        document.writeln("<br>"+ ho + " " + ten);
+        document.writeln("<br>");
+        document.writeln(ho.length);
+        document.writeln(typeof(ho));
+        //
+        var hovaten ="Dinh Viet Hung";
+        document.writeln(hovaten.lastIndexOf("V"))
+        document.writeln("<br>");
+        document.writeln(hovaten.includes(""));
+        document.writeln("<br>");
+        document.writeln(hovaten.startsWith("Dinh"));
+        document.writeln("<br>");
+        //thay the ki tu
+        document.writeln(hovaten.replace("Do","Dinh"));
+
+        //Date
+        var homNay = new Date();
+        document.writeln("<br>");
+        document.write(homNay);
+
+        var ngay = new Date("2026-09-30");
+        document.writeln("<br>");
+        document.write(ngay);
+
+        var namNay = homNay.getFullYear();
+        document.writeln("<br>");
+        document.write(namNay);
+
+        var thangNay = homNay.getMonth() + 1;
+        document.writeln("<br>");
+        document.write(thangNay);
+
+        //Date
+        var homNay = new Date();
+        var namNay = homNay.getFullYear();
+        var thangNay = homNay.getMonth() + 1;
+        var ngayNay = homNay.getDate();
+
+        document.writeln("<br>");
+        document.write("Hôm nay là ngày " + ngayNay + " tháng " + thangNay + " năm " + namNay);
+
+        //Mảng
+        var mang = [1,2,3,4,5];
+        document.writeln("<br>");
+        document.writeln(mang[2]);
+        document.writeln("<br>");
+        document.writeln(mang.length);
+
+        
+        // Mảng tên 2 bạn sinh viên bất kỳ
+        document.writeln("<br>");
+        var mang2SV = ["Nguyen Van An", "Tran Thi Mai"];
+        document.write("Sinh vien 1: " + mang2SV[0] + " - Sinh vien 2: " + mang2SV[1]);
+
+        // Mảng mẫu của bạn
+        document.writeln("<br>");
+        var mangTen = ["Viet Hung", "Yen", "Huy"];
+        document.write(mangTen[2]);
+
+        document.writeln("<br>");
+        var mang = [1, 2, 3, 4, 5, "Viet Hung", "Yen", "Huy"];
+        document.write(mang[5]);
+
+        // Object thông tin sinh viên
+        var thongTinSinhVien = {
+            ten: "Dinh Viet Hung",
+            namSinh: 2003,
+            queQuan: {
+                thanhPho: "Ninh Binh",
+                phuong: "Tran Hung Dao"
+            }
+        };
+
+        document.writeln("<br>");
+        document.write(thongTinSinhVien.queQuan.thanhPho);
+
+        var tuoi = namNay - thongTinSinhVien.namSinh;
+        document.writeln("<br>");
+        document.write("Tuoi: " + tuoi);
+
+        // Thêm thuộc tính Giới tính
+        thongTinSinhVien.GioiTinh = true;
+
+    </script>
+    <!-- External Javascript -->
+    <script src="script.js"></script>
+</body>
+</html>

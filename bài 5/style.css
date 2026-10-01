@@ -1,0 +1,13 @@
+h3{
+    color: green;
+}
+#tieude{
+    color:rgb(217, 255, 127)
+}
+.tieude{
+    /*background-color để qui định màu nền*/
+    background-color:black;
+}
+h3.tieude2{
+    background-color:blueviolet;
+}

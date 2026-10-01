@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <title>HUMG</title>
+    <style>
+        body {
+            margin: 0;
+             }
+        .muc{
+            margin: 0;
+        }     
+
+        .danh-sach-muc {
+            padding: 0;
+            margin: 0;
+        }
+
+        .lienket {
+            color:#ffffff;
+            /* bỏ gạch chân */
+            text-decoration: none;
+        }
+
+        .danh-muc {
+            background-color: #0277bd;
+            gap: 20px;
+            display: flex;
+            /* gap khoảng cách các đối tượng ở trong */
+            padding: 0;
+            margin: 0;
+            /* bỏ dấu chấm ở danh sách khi dùng ul,li */
+            list-style: none;
+        }
+
+        .trai {
+            width: 20%;
+            height: 100vh;
+        }
+        .khoi-dang-nhap {
+            width: 100%;
+            height: 100px;
+        }
+        form {
+            margin: 10px auto;
+            width: 80%;
+        }
+        .khoi {
+            width: 100%;
+        }
+        input{
+            width: 100%;
+            padding: 5px 0;
+        }
+        .quen-mat-khau{
+            display: flex;
+            justify-content: flex-end;
+        }
+        .quen-mat-khau-lien-ket{
+            color:#0277bd;
+            text-decoration: none;
+        }
+        button{
+            width: 100%;
+            padding: 5px 0;
+            border-radius: 5px;
+        }
+        .login{
+            margin-bottom: 10px;
+
+        }
+
+        .phai {
+            width: 80%;
+        }
+        .main {
+            display: flex;
+        }
+        .tin {
+            width: 95%;
+            gap: 20px;
+            display: flex;
+            padding: 0;
+            margin: 0;
+            list-style: none;
+
+        }
+        .chuc-nang{
+            
+            gap: 20px;
+            display: flex;
+            padding: 0;
+            margin: 0;
+            list-style: none;
+
+        }
+        .lien-ket-xem-tiep{
+            color:#0277bd;
+            text-decoration-line: none;
+            font-weight: bold;
+        }
+        .danh-sach-bai{
+            display:flex;
+            justify-content: space-around;
+        }
+        .chi-tiet-bai{
+            width:auto
+        }
+
+        
+
+    </style>
+</head>
+<body>
+    <body>
+
+    <!-- Danh mục -->
+    <nav class="danh-sach-muc">
+        <ul class="danh-muc">
+            <li class="muc"><a href="#" class="lienket">&#9776;</a></li>
+            <li class="muc"><a href="#" class="lienket">Thực tập, Đồ án</a></li>
+            <li class="muc"><a href="#" class="lienket">Thủ tục Một Cửa</a></li>
+            <li class="muc"><a href="#" class="lienket">Một Cửa online</a></li>
+            <li class="muc"><a href="#" class="lienket">E-mail HUMG</a></li>
+        </ul>
+    </nav>
+
+    <main class="main">
+
+        <!-- CỘT TRÁI -->
+        <div class="trai">
+            <div class="khoi-dang-nhap">
+                <form action="">
+                    <div class="khoi">
+                        <p>Tài khoản</p>
+                        <input type="text" name="taikhoan" placeholder="1921050284">
+                    </div>
+                    <div class="khoi-thong-tin">
+                        <p>Mật khẩu</p>
+                        <input type="password" name="matkhau">
+                    </div>
+                    <div class="quen-mat-khau">
+                        <a class="quen-mat-khau-lien-ket" href="#">Quên mật khẩu?</a>
+                    </div>
+                    <div class="khoi-thong-tin">
+                        <button type="submit" class="login">Đăng nhập</button>
+                        <button type="button" class="login-365">Đăng nhập với Microsoft office 365</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+        <!-- CỘT PHẢI -->
+    <div class="phai">
+
+        <!-- KHỐI TIN TỨC -->
+        <div class="khoi-tin-tuc">
+            <p class="danh-sach-bai">
+                <b>&#128240; Tin tức</b>
+                <a class="lien-ket-xem-tiep" href="#">Xem tiếp &rsaquo;</a>
+            </p>
+            <ul class="tin">
+                <li>
+                    <img src="../ảnh/anh.png" alt="No image" width="100%">
+                    <p>Về việc đăng ký khối lượng học tập học kỳ phụ năm học 2025-2026</p>
+                </li>
+                <li>
+                    <img src="../ảnh/anh.png" alt="No image" width="100%">
+                    <p>Về việc nghỉ học</p>
+                </li>
+                <li>
+                    <img src="../ảnh/anh.png" alt="Kiểm định chất lượng" width="100%">
+                    <p>Trường Đại học Mỏ - Địa chất đạt chứng nhận kiểm định chất lượng cơ sở giáo dục (chu kỳ 2)</p>
+                </li>
+            </ul>
+        </div>
+
+    </div>
+</main>
+
+        
+       
+            
+            
+    </main>
+        
+
+</body>
+</html>

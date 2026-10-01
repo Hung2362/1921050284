@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background-color:#2F2C38;
+            color:white; 
+        }
+        .danh-sach-muc{
+            list-style: none;
+            display:flex;
+            gap:20px;
+        }
+        .lien-ket-muc{
+            text-decoration: none;
+            color:#DBDBDD;
+        }
+        header{
+            display:flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .muc{
+            padding:15px;
+            border-radius: 25px;
+        }
+        .muc:hover{
+            background-color: gray;
+        }
+        .logo{
+            width:50px;
+        }
+        .avata{
+            width:50px;
+        }
+        .dang-chon{
+            background-color:#4E4B52;
+        }
+        .banner {
+        
+            width: 95%;
+            margin: 20px auto;
+            border-radius: 12px;
+            overflow: hidden;
+            position: relative;
+        }
+        .banner-anh {
+            width: 100%;
+            display: block;
+            border-radius: 12px;
+        }
+
+        .thong-tin-banner {
+            position: absolute;
+            bottom: 20px;
+            left: 20px;
+            width: 40%;
+        }
+
+        .nut-phat {
+            background: white;
+            color: black;
+            padding: 8px 16px;
+            border: none;
+        }
+
+        .nut-khac {
+            background: gray;
+            color: white;
+            padding: 8px 16px;
+            border: none;
+            margin-left: 8px;
+        }
+        .danh-sach-the-loai {
+            width: 95%;
+            margin: 0 auto;
+        }
+
+        .the-loai {
+            margin-bottom: 25px;
+        }
+
+        .ten-the-loai h2 {
+            font-size: 18px;
+            margin-bottom: 10px;
+        }
+        .danh-sach-phim {
+            display: flex;
+            gap: 10px;
+            overflow-x: auto;
+        }
+        .anh-phim {
+           width: 180px;
+           height: 105px;
+           border-radius: 4px;
+           object-fit: cover;
+        }
+        .anh-nhan-vat {
+           width: 100px;
+           height: 100px;
+           border-radius: 50%;
+           object-fit: cover;
+        }
+        /* FOOTER */
+        footer {
+            width: 80%;
+            margin: 50px auto 30px auto;
+            color: #808080;
+            font-size: 13px;
+        }
+
+        .cot-footer {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 20px;
+        }
+
+        .danh-sach-footer {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        .muc-footer {
+            margin-bottom: 12px;
+        }
+
+        .lien-ket-footer {
+            color: #808080;
+            text-decoration: none;
+        }
+
+        .lien-ket-footer:hover {
+            text-decoration: underline;
+        }
+
+        .ban-quyen {
+            font-size: 11px;
+            color: #808080;
+            margin-top: 15px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+    <nav class="danh-muc">
+        <ul class="danh-sach-muc">
+            <img class="logo" src="logo.svg">
+            <li class="muc"><a class="lien-ket-muc" herf="#">Trang chủ</a></li>
+            <li class="muc"><a class="lien-ket-muc" herf="#">Nhân vật</a></li>
+            <li class="muc"><a class="lien-ket-muc" herf="#">Series</a></li>
+            <li class="muc"><a class="lien-ket-muc" herf="#">Phim</a></li>
+            <li class="muc"><a class="lien-ket-muc" herf="#">Mới & phổ biến</a></li>
+            <li class="muc"><a class="lien-ket-muc" herf="#">Netflix của tôi</a></li>
+            <li class="muc"><a class="lien-ket-muc" herf="#"></a>Duyệt tìm theo ngôn ngữ</li>
+        </ul>
+    </nav>
+    <div class="chuc-nang">
+        <div class="tim-kiem"></div>
+        <div class="thong-tin">
+            <img class="avata" src="treem.jpg" alt="">
+        </div>
+    </div>
+    </header>
+    <main>
+        <div class="banner">
+            <img class="banner-anh" src="banne.jpg" alt="Banner">
+            
+            <div class="thong-tin-banner">
+                <h2>Cảnh Sát Trưởng Labrador</h2>
+                <p>Cảnh sát trưởng Labrador và trợ thủ đáng tin cậy - sĩ quan Doberman - vào cuộc, đấu tranh với tội phạm và chia sẻ các mẹo an toàn hữu ích để giữ cho Thị trấn Rừng luôn an toàn.</p>
+                <div>
+                    <button type="button" class="nut-phat">Phát</button>
+                    <button type="button" class="nut-khac">Thông tin khác</button>
+                </div>
+            </div>
+        </div>
+        </div>
+        <div class="danh-sach-the-loai">
+            <div class="the-loai">
+                <div class="ten-the-loai">
+                    <h2>Có thể bạn chưa xem</h2>
+                </div>
+                <div class="danh-sach-phim">
+                    <img class="anh-phim" src="banne.jpg" alt="Phim 1">
+                    <img class="anh-phim" src="banne.jpg" alt="Phim 2">
+                    <img class="anh-phim" src="banne.jpg" alt="Phim 3">
+                    <img class="anh-phim" src="banne.jpg" alt="Phim 4">
+                    <img class="anh-phim" src="banne.jpg" alt="Phim 5">
+                </div>
+            </div>
+
+            <div class="the-loai">
+                <div class="ten-the-loai">
+                    <h2>Phim hài hước</h2>
+                </div>
+                <div class="danh-sach-phim">
+                    <img class="anh-phim" src="banne.jpg" alt="Phim 1">
+                    <img class="anh-phim" src="banne.jpg" alt="Phim 2">
+                    <img class="anh-phim" src="banne.jpg" alt="Phim 3">
+                    <img class="anh-phim" src="banne.jpg" alt="Phim 4">
+                    <img class="anh-phim" src="banne.jpg" alt="Phim 5">
+                </div>
+            </div>
+
+            <div class="the-loai">
+                <div class="ten-the-loai">
+                    <h2>Nhân vật</h2>
+                </div>
+                <div class="danh-sach-phim">
+                    <img class="anh-nhan-vat" src="treem.jpg" alt="Nhân vật 1">
+                    <img class="anh-nhan-vat" src="treem.jpg" alt="Nhân vật 2">
+                    <img class="anh-nhan-vat" src="treem.jpg" alt="Nhân vật 3">
+                    <img class="anh-nhan-vat" src="treem.jpg" alt="Nhân vật 4">
+                    <img class="anh-nhan-vat" src="treem.jpg" alt="Nhân vật 5">
+                </div>
+            </div>
+
+        </div>
+ 
+    </main>
+    <footer>
+        <div class="cot-footer">
+            <ul class="danh-sach-footer">
+                <li class="muc-footer"><a class="lien-ket-footer" href="#">Mô tả âm thanh</a></li>
+                <li class="muc-footer"><a class="lien-ket-footer" href="#">Việc làm</a></li>
+                <li class="muc-footer"><a class="lien-ket-footer" href="#">Tùy chọn cookie</a></li>
+            </ul>
+
+            <ul class="danh-sach-footer">
+                <li class="muc-footer"><a class="lien-ket-footer" href="#">Thẻ quà tặng</a></li>
+                <li class="muc-footer"><a class="lien-ket-footer" href="#">Điều khoản sử dụng</a></li>
+                <li class="muc-footer"><a class="lien-ket-footer" href="#">Thông tin doanh nghiệp</a></li>
+            </ul>
+
+            <ul class="danh-sach-footer">
+                <li class="muc-footer"><a class="lien-ket-footer" href="#">Trung tâm đa phương tiện</a></li>
+                <li class="muc-footer"><a class="lien-ket-footer" href="#">Quyền riêng tư</a></li>
+                <li class="muc-footer"><a class="lien-ket-footer" href="#">Liên hệ với chúng tôi</a></li>
+            </ul>
+
+            <ul class="danh-sach-footer">
+                <li class="muc-footer"><a class="lien-ket-footer" href="#">Quan hệ với nhà đầu tư</a></li>
+                <li class="muc-footer"><a class="lien-ket-footer" href="#">Thông báo pháp lý</a></li>
+            </ul>
+        </div>
+
+        <p class="ban-quyen">@ 1997-2026 Netflix, Inc.</p>
+    </footer>
+</body>
+</html>
