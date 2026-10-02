@@ -133,8 +133,63 @@
         // Thêm thuộc tính Giới tính
         thongTinSinhVien.GioiTinh = true;
 
+        //switch case
+        var d = new Date();
+        var theDay = d.getDay();
+        switch (theDay) {
+            case 5:
+                document.write("Finally Friday");
+                break;
+            case 6:
+                document.write("Super Friday");
+                break;
+            case 0:
+                document.write("Sleepy Friday");
+                break;
+            default:
+                document.write("I'm Looking forward to this weekend");
+        }
+
+        for ( var index = 1; index <= 1000; index++) {
+            document.writeln("<br>");
+            document.writeln(" hihihi lần " + index);
+
+        }
+        var tuoiNhapVao = "hai muoi";
+        if (isNaN(tuoiNhapVao)) {
+            document.writeln("<br>");
+            document.write("Vui lòng nhập số hợp lệ, không nhập chữ!");
+        } else {
+            document.writeln("<br>");
+            document.write("Tuổi của bạn là: " + tuoiNhapVao);
+        }
+        //while
+        var j=0;
+        do {
+            document.write("the number is " + j);
+            document.write("<br />");
+            j = j+1;
+        }while (j <= 10)
+
+        //popup boxes
+        // alert("hello");
+
+        var r = confirm("press a button")
+        if (r == true) {
+            document.write("you pressed ok!");
+        }
+        else{
+            document.write("you pressed cancel!");
+        }
+        var r = prompt("Nhập vào họ tên", "Nhập tên ở đây");
+        document.write(r);
+
+    
+        
+
     </script>
     <!-- External Javascript -->
     <script src="script.js"></script>
+
 </body>
 </html>
