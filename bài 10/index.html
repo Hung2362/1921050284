@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>bài 10-js</title>
+    <style>
+        img{
+            width: 20%;
+        }
+    </style>
+</head>
+<body>
+    <div style="text-align: center;">
+        <h1 class="che-do">Chế độ sáng</h1>
+        <img class="anh" src="mattroi.png">
+        <div class="chuc-nang"></div>
+        <button onclick="doiCheDo()">Đổi chế độ</button>
+    </div>
+
+    <script>
+        function doiCheDo() {
+            if (cheDo == true){
+            document.getElementsByTagName("body")[0].style = "background-color: black";
+            document.getElementsByClassName("che-do")[0].style = "color: white";
+            document.getElementsByClassName("che-do")[0].innerHTML = "Chế độ tối";
+            document.getElementsByTagName("img")[0].src = "mattrang.png";
+            }
+        }
+    </script>
+</body>
+</html>
